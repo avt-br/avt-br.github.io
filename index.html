@@ -1,0 +1,166 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body>
+
+  </div>
+    <div style="position: fixed; z-index: -98; width: 100%; height: 100%">
+  </div>
+  <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
+    <iframe id = "background_video" frameborder="0" height="100%" width="100%" 
+            src="https://www.youtube.com/embed/6zoJavBcU5o?autoplay=1&loop=1&rel=0&fs=1&modestbranding=1&iv_load_policy=3&enablejsapi=1&widgetid=1&controls=0&showinfo=0">
+
+    </iframe>
+  </div>
+      
+
+  <div id="gallery-overlay">
+    <div class="gallery-header">
+      <h1>Videos</h1>
+    </div>
+    <div class="gallery-body">
+      <img id="gallery-image" src="">
+      <iframe id="gallery-video" width="100%" height="100%" src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
+    <div class="gallery-footer">
+      <h1 class="gallery-button" onclick='previous_gallery_element()'>Prev</h1>
+      <h1 class="gallery-button" onclick='close_gallery()'>Return</h1>
+      <h1 class="gallery-button" onclick='next_gallery_element()'>Next</h1>
+    </div>
+  </div>
+
+  <div class="header">
+    <h1>PLAY ►</h1>
+  </div>
+  
+  <div class="footer">
+    <h1>ANDRE VITOR TAVARES</h1>
+  </div>
+  
+  <div class="body">
+
+    <div id="menu" class="osd">
+      <div class="osd-header">
+        <h1>Main</h1>
+      </div>
+      <div class="osd-body">
+        <h1 class="osd_button" onclick='change_osd("menu","bio")'>Bio</h1>
+        <h1 class="osd_button" onclick='change_osd("menu","photos")'>Photos</h1>
+        <h1 class="osd_button" onclick='change_osd("menu","videos")'>Videos</h1>
+        <h1 class="osd_button" onclick='change_osd("menu","misc")'>Misc</h1>
+      </div>
+    </div>
+
+    <div id="bio" class="osd gallery">
+      <div class="osd-header">
+        <h1>Bio</h1>
+      </div>
+      <div class="osd-body">
+        <p>Bio Bio Bio Bio</p>
+      </div>
+      <div class="osd-footer">
+        <h1 class="osd_button" onclick='change_osd("bio", "menu")'>BACK</h1>
+      </div>
+    </div>
+
+    <div id="photos" class="osd gallery">
+      <div class="osd-header">
+        <h1>Photos</h1>
+      </div>
+      <div class="osd-body">
+        <div class="album" thumb="img/vice1.jpg" name="Vice"> 
+          <div class="entry" type="image" thumb="img/vice1.jpg"  link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8e0c9030490563.5625a2f7e437f.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice2.jpg"  link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6ab0b030490563.5625a2f7c509b.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice3.jpg"  link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/469fe130490563.5625a2f7c64a0.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice4.jpg"  link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a95a7930490563.5625a2f7c7875.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice5.jpg"  link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1668b930490563.5625a2f7c8757.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice6.jpg"  link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/09258030490563.5625a2f7c96a9.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice7.jpg"  link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b5cb7930490563.5625a2f7ca5be.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice8.jpg"  link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/79788230490563.5625a2f7cb59f.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice9.jpg"  link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c3634d30490563.5625a2f7cc52c.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice10.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/30db0730490563.5625a2f7cd4ae.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice11.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/608a5a30490563.5625a2f7ce3cf.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice12.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b2a54030490563.5625a2f7cf331.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice13.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fd976730490563.5625a2f7d029f.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice14.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b44fec30490563.5625a2f7d1240.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice15.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2ecb0d30490563.5625a2f7d21cd.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice16.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/349fab30490563.5625a2f7d30cb.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice17.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8bd18630490563.5625a2f7d445f.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice18.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8bd18630490563.5625a2f7d445f.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice19.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/b4318330490563.5625a2f7d5494.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice20.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/bc2dce30490563.5625a2f7d67d3.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice21.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/68a06a30490563.5625a2f7d7ba9.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice22.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3dc7a630490563.5625a2f7d8e5f.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice23.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/afcfef30490563.5625a2f7d9d44.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice24.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8c826630490563.5625a2f7dabc1.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice25.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/2884e230490563.5625a2f7dba09.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice26.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/a9f1a930490563.5625a2f7dc9b1.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice27.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/c6392830490563.5625a2f7ddcd6.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice28.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/6b289830490563.5625a2f7dedf5.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice29.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/0834aa30490563.5625a2f7dfddc.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice30.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/8c3eec30490563.5625a2f7e1163.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice31.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/cc27ea30490563.5625a2f7e204d.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice32.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fa6ad630490563.5625a2f7e33d8.jpg"> </div>
+          <div class="entry" type="image" thumb="img/vice33.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/fa6d5d30490563.5625a2f7e52a5.jpg"> </div>
+        </div>
+        <div class="album" thumb="img/pr1.jpg" name="pr">
+          <div class="entry" type="image" thumb="img/pr1.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/disp/38612c30089779.561307615888d.jpg"> </div>
+          <div class="entry" type="image" thumb="img/pr2.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/disp/54022630089779.5613076155faa.jpg"> </div>
+          <div class="entry" type="image" thumb="img/pr3.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/disp/8a2cc430089779.5613076157236.jpg"> </div>
+          <div class="entry" type="image" thumb="img/pr4.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/disp/332e1830089779.561307615ad4b.jpg"> </div>
+          <div class="entry" type="image" thumb="img/pr5.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/disp/181e3730089779.5613076159cb8.jpg"> </div>
+          <div class="entry" type="image" thumb="img/pr6.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/disp/10745930089779.5613076154b40.jpg"> </div>
+          <div class="entry" type="image" thumb="img/pr7.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/88db4d30089779.56130b5759c42.jpg"> </div> 
+        </div>
+        <div class="album" thumb="img/sp1.jpg" name="sp"> 
+          <div class="entry" type="image" thumb="img/sp2.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400/f8e7c130090791.5613117f5fa01.jpg"> </div>
+          <div class="entry" type="image" thumb="img/sp1.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/eff68430090791.5613117f6090a.jpg"> </div>
+        </div>
+        <div class="album" thumb="img/hm1.jpg" name="hm"> 
+          <div class="entry" type="image" thumb="img/hm1.jpg" link="https://mir-s3-cdn-cf.behance.net/project_modules/1400/1efc7930091175.5613153a0ff59.jpg"> </div>
+        </div>
+      </div>
+      <div class="osd-footer">
+        <h1 class="osd_button" onclick='change_osd("photos", "menu")'>BACK</h1>
+      </div>
+    </div>
+
+    <div id="videos" class="osd gallery">
+      <div class="osd-header">
+        <h1>Videos</h1>
+      </div>
+      <div class="osd-body">
+        <div class="album" thumb="img/srcc.jpg" name="srcc"> 
+          <div class="entry" type="video" thumb="img/srcc.jpg" link="https://player.vimeo.com/video/190934911"> </div>
+        </div>
+        <div class="album" thumb="img/savages.png" name="savages"> 
+          <div class="entry" type="video" thumb="img/savages.png" link="https://vimeo.com/141593995"> </div>
+        </div>
+        <div class="album" thumb="img/dp.jpg" name="dp"> 
+          <div class="entry" type="video" thumb="img/dp.jpg" link="https://player.vimeo.com/video/141593995"> </div>
+        </div>
+        <div class="album" thumb="img/showreel.jpg" name="showreel"> 
+          <div class="entry" type="video" thumb="img/showreel.jpg" link="https://player.vimeo.com/video/190934911"> </div>
+        </div>
+      </div>
+      <div class="osd-footer">
+        <h1 class="osd_button" onclick='change_osd("videos", "menu")'>BACK</h1>
+      </div>
+    </div>
+
+    <div id="misc" class="osd gallery">
+      <div class="osd-header">
+        <h1>Misc</h1>
+      </div>
+      <div class="osd-body">
+
+      </div>
+      <div class="osd-footer">
+        <h1 class="osd_button" onclick='change_osd("misc", "menu")'>BACK</h1>
+      </div>
+    </div>
+</body>
