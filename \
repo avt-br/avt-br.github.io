@@ -3,7 +3,7 @@ body {
   background-color:black;
 }
 
-h1, h2, p{
+h1, p{
   text-shadow:  1px 3px green,
                -2px -3px red,
                 1px -3px blue;
@@ -210,7 +210,7 @@ div.album img{
 }
 
 div.album img:hover{
-  opacity: 0.8;
+  opacity: .8;
 }
 
 #gallery-video{

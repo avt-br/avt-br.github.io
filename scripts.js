@@ -7,8 +7,6 @@ function current_gallery_element(){
 
 function set_gallery_image(entry_element){
   var image = document.getElementById("gallery-image");
-  var old_height = image.style.height;
-  var old_width = image.style.width;
 
   image.style.width= "200px";
   image.style.height= "200px";
@@ -16,9 +14,9 @@ function set_gallery_image(entry_element){
 
   var downloadingImage = new Image();
   downloadingImage.onload = function(){
-    image.style.width = old_width;
-    image.style.height = old_height;
-    image.style.background = '';
+    image.style.width = "100%";
+    image.style.height = "100%";
+    image.style.background = "";
     image.src = this.src;   
   };
   downloadingImage.src = entry_element.getAttribute("link");
