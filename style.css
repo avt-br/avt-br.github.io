@@ -10,9 +10,17 @@ h1, h2, p{
   
   -webkit-filter: blur(2px);
   font-family: "Press Start 2P";
+  /*animation: jerkwhole  1s infinite;*/
 }
 
-.header{
+h1{
+  margin: 5px;
+  padding: 10px;
+  color:white;
+  display:inline-block;
+}
+
+div.header{
   position: absolute;
   top: 0;
   left: 0;
@@ -22,7 +30,7 @@ h1, h2, p{
   background: transparent;
 }
 
-.footer {
+div.footer {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -33,11 +41,7 @@ h1, h2, p{
   background: transparent;
 }
 
-.footer > h1, .header >h1{
-  padding: 0 10px;
-}
-
-.body{
+div.body{
   position: absolute;
   top: 80px;
   left: 0;
@@ -48,38 +52,39 @@ h1, h2, p{
   justify-content: center;
 }
 
-.osd{
+div.osd{
   position: relative;
   padding:0 20px;
   background-color:blue;
   text-align:center;
   overflow:auto;
   opacity:0.92;
-
   -webkit-box-shadow: 0px 0px 5px 5px blue;
   -moz-box-shadow: 0px 0px 5px 5px blue;
   box-shadow: 0px 0px 5px 5px blue;
-//  animation: blue-me 0.1s infinite;
+/*  animation: blue-me 0.1s infinite; */
 }
 
-.osd-header{
+div.osd-header{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 80px;
   overflow: auto;
+  text-align: center;
 }
 
-.osd-footer {
+div.osd-footer {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   height: 80px;
+  text-align: center;
 }
 
-.osd-body{
+div.osd-body{
   position: absolute;
   top: 80px;
   left: 0;
@@ -89,23 +94,29 @@ h1, h2, p{
   overflow: auto;
 }
 
-div#menu .osd-body{
+div.osd.large{
+  width:650px; 
+  height:550px;
+}
+
+/*remove the footer from the main menu*/
+#menu div.osd-body{
   bottom: 20px;
   overflow:hidden;
 }
 
-h1.osd_button{
+h1.osd-button{
   cursor:pointer;
-  color:white;
 }
-
-h1.osd_button:hover{
-  color:gray;
+h1.osd-button:hover{
+  background-color: darkblue;
 }
-
-div.gallery{
-  width:650px; 
-  height:550px;
+h1.osd-button.gallery:hover{
+  background: gray;
+}
+h1.disabled-osd-button{
+  cursor:default;
+  opacity: 0.5;
 }
 
 div.album {
@@ -153,62 +164,23 @@ div.album> img{
   display:none;
 }
 
-.gallery-header{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  overflow: auto;
-  text-align:center;
-}
-
-.gallery-body{
-  position: absolute;
-  top: 80px;
-  left: 0;
-  bottom: 80px;
-  right: 0;
-  margin:10px;
-  overflow: auto;
-
+div.gallery-body{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.gallery-body img{
+div.gallery-body img{
   height: 100%;
   width: 100%;
   object-fit: contain;
   -o-object-fit: contain;
 }
 
-.gallery-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 80px;
-  text-align:center;
-}
-
-h1.gallery-button{
-  cursor:pointer;
-  color:white;
-  display:inline-block;
-  padding:0 20px;
-}
-
-h1.gallery-button:hover{
-  color:gray;
-}
-
 div.album img{
   cursor:pointer;
   color:white;
 }
-
 div.album img:hover{
   opacity: 0.8;
 }
@@ -232,9 +204,8 @@ div.album img:hover{
   41% { opacity:0.8; top:0px; left:-100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(50deg,0);}
   42% { opacity:0.8; top:0px; left:100px; -webkit-transform:scale(1,1.2);  -webkit-transform:skew(-80deg,0);}
   43% { opacity:1; top:0; left:0; -webkit-transform:scale(1,1);  -webkit-transform:skew(0,0);}
-  65% { ; }
+  65% { ; } 
 }
-
 
 @keyframes blue-me {
   28%{ 

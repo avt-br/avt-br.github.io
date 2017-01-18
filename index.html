@@ -19,17 +19,17 @@
   </div>
 
   <div id="gallery-overlay">
-    <div class="gallery-header">
+    <div class="osd-header">
       <h1>Videos</h1>
     </div>
-    <div class="gallery-body">
+    <div class="gallery-body osd-body">
       <img id="gallery-image" src="">
       <iframe id="gallery-video" width="100%" height="100%" src="" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
-    <div class="gallery-footer">
-      <h1 class="gallery-button" onclick='previous_gallery_element()'>Prev</h1>
-      <h1 class="gallery-button" onclick='close_gallery()'>Return</h1>
-      <h1 class="gallery-button" onclick='next_gallery_element()'>Next</h1>
+    <div class="osd-footer">
+      <h1 class="osd-button gallery" id="gallery-previous" onclick='set_previous_gallery_element()'>Prev</h1>
+      <h1 class="osd-button gallery" id="gallery-return" onclick='close_gallery()'>Return</h1>
+      <h1 class="osd-button gallery" id="gallery-next" onclick='set_next_gallery_element()'>Next</h1>
     </div>
   </div>
 
@@ -48,14 +48,14 @@
         <h1>Main</h1>
       </div>
       <div class="osd-body">
-        <h1 class="osd_button" onclick='change_osd("menu","bio")'>Bio</h1>
-        <h1 class="osd_button" onclick='change_osd("menu","photos")'>Photos</h1>
-        <h1 class="osd_button" onclick='change_osd("menu","videos")'>Videos</h1>
-        <h1 class="osd_button" onclick='change_osd("menu","misc")'>Misc</h1>
+        <h1 class="osd-button" onclick='change_osd("menu","bio")'>Bio</h1>
+        <h1 class="osd-button" onclick='change_osd("menu","photos")'>Photos</h1>
+        <h1 class="osd-button" onclick='change_osd("menu","videos")'>Videos</h1>
+        <h1 class="osd-button" onclick='change_osd("menu","misc")'>Misc</h1>
       </div>
     </div>
 
-    <div id="bio" class="osd gallery">
+    <div id="bio" class="osd large">
       <div class="osd-header">
         <h1>Bio</h1>
       </div>
@@ -63,11 +63,11 @@
         <p>Bio Bio Bio Bio</p>
       </div>
       <div class="osd-footer">
-        <h1 class="osd_button" onclick='change_osd("bio", "menu")'>BACK</h1>
+        <h1 class="osd-button" onclick='change_osd("bio", "menu")'>BACK</h1>
       </div>
     </div>
 
-    <div id="photos" class="osd gallery">
+    <div id="photos" class="osd large">
       <div class="osd-header">
         <h1>Photos</h1>
       </div>
@@ -125,11 +125,11 @@
         </div>
       </div>
       <div class="osd-footer">
-        <h1 class="osd_button" onclick='change_osd("photos", "menu")'>BACK</h1>
+        <h1 class="osd-button" onclick='change_osd("photos", "menu")'>BACK</h1>
       </div>
     </div>
 
-    <div id="videos" class="osd gallery">
+    <div id="videos" class="osd large">
       <div class="osd-header">
         <h1>Videos</h1>
       </div>
@@ -148,11 +148,11 @@
         </div>
       </div>
       <div class="osd-footer">
-        <h1 class="osd_button" onclick='change_osd("videos", "menu")'>BACK</h1>
+        <h1 class="osd-button" onclick='change_osd("videos", "menu")'>BACK</h1>
       </div>
     </div>
 
-    <div id="misc" class="osd gallery">
+    <div id="misc" class="osd large">
       <div class="osd-header">
         <h1>Misc</h1>
       </div>
@@ -160,7 +160,7 @@
 
       </div>
       <div class="osd-footer">
-        <h1 class="osd_button" onclick='change_osd("misc", "menu")'>BACK</h1>
+        <h1 class="osd-button" onclick='change_osd("misc", "menu")'>BACK</h1>
       </div>
     </div>
 </body>
